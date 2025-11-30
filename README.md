@@ -6,9 +6,9 @@ This is a MERN stack e-commerce web application for a clothing brand. The applic
 
 ## Live Demo
 
-Frontend:link
+Frontend:https://clothing-brand-e-commerce-web-app.onrender.com/
 
-Backend API:link
+Backend API:https://backend-clothing-brand-e-commerce-web-app.onrender.com
 
 ---
 
