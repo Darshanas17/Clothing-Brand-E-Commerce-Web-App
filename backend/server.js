@@ -1,6 +1,7 @@
 require("dotenv").config();
 const express = require("express");
 const cookieParser = require("cookie-parser");
+const cors = require("cors");
 const connectDB = require("./config/db");
 
 const authRoutes = require("./routes/authRoutes");
@@ -13,6 +14,13 @@ connectDB();
 
 app.use(express.json());
 app.use(cookieParser());
+
+app.use(
+  cors({
+    origin: "https://clothing-brand-e-commerce-web-app.onrender.com",
+    credentials: true,
+  })
+);
 
 app.get("/", (req, res) => {
   res.json({
